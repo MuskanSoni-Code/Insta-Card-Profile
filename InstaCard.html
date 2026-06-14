@@ -1,0 +1,264 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    img {
+      height: 100vh;
+      width: 100%;
+      filter: blur(8px);
+    }
+    #card {
+      width: 23%;
+      height: 80%;
+      z-index: 100;
+      position: absolute;
+      left: 40%;
+      top: 50px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 24px;
+    }
+    span {
+      position: absolute;
+      left: 30%;
+      top: 20px;
+    }
+    #cam {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    #send {
+      position: absolute;
+      left: 80%;
+      top: 30px;
+    }
+
+    #Profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(
+        125deg,
+        yellow,
+        red,
+        rgb(228, 115, 134),
+        rgb(203, 69, 161)
+      );
+      position: absolute;
+      top: 120px;
+      left: 47%;
+      z-index: 200;
+    }
+
+    #Profile > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      filter: none;
+      border: 2px solid white;
+    }
+    h2 {
+      font-family: "Arial", sans-serif;
+      text-wrap: nowrap;
+      margin-top: 15px;
+      margin-left: -10px;
+    }
+    p {
+      margin-left: -27px;
+    }
+    .name {
+      margin-left: -10px;
+      text-wrap: nowrap;
+      font-weight: bold;
+      font-family: "Arial", sans-serif;
+      margin-top: 5%;
+    }
+    button {
+      color: white;
+      background-color: rgb(10, 113, 209);
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+    #detail {
+      margin-top: 15%;
+    }
+    #detail > p {
+      border-top: 2px solid gray;
+      width: 293%;
+      text-wrap: nowrap;
+      margin-left: -93%;
+      padding: 6px;
+      color: rgb(59, 150, 235);
+      text-align: center;
+    }
+    #contact {
+      display: flex;
+      gap: 35px;
+      width: 300px;
+      margin-top: 7%;
+      margin-left: -80%;
+    }
+    #hand > img {
+      position: absolute;
+      filter: none;
+      width: 545%;
+      height: 310%;
+      margin-top: -200%;
+      margin-left: -250%;
+      z-index: -1000;
+      filter: none;
+    }
+  </style>
+  <body>
+    <div>
+      <img
+        src="https://tse2.mm.bing.net/th/id/OIP.6CtIeRz_Qcw5wlvAFSLlUwHaE8?r=0&cb=thfc1falcon2&pid=ImgDet&w=474&h=316&rs=1&o=7&rm=3"
+      />
+      <div id="card">
+        <svg
+          id="cam"
+          style="font-size: 20px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          class="bi bi-camera-fill"
+          viewBox="0 0 16 16"
+        >
+          <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+          <path
+            d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"
+          />
+        </svg>
+        <div id="send">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-send"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
+            />
+          </svg>
+        </div>
+        <span
+          style="font-family: &quot;Satisfy&quot;, cursive; font-size: 28px"
+        >
+          Instagram
+        </span>
+      </div>
+      <div id="Profile">
+        <img src="./WhatsApp Image 2026-06-12 at 4.17.34 PM (1).jpeg" />
+        <h2>Muskan Soni</h2>
+        <p>sonimuskan9451@gmail.com</p>
+        <p class="name">
+          Fronted Developer<br />
+          Feel free to contact me!
+        </p>
+        <button>Follow</button>
+        <div id="detail">
+          <p>📞 +9956140067</p>
+          <p>✉️ sonimuskan9415@gmail.com</p>
+          <p>🌍 www.inflection.org</p>
+          <p></p>
+        </div>
+        <div id="contact">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-house-door-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-plus-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="red"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-person"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+            />
+          </svg>
+        </div>
+        <div id="hand">
+          <img src="./m.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
